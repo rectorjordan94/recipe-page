@@ -18,7 +18,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [Netlify Deployment](https://rectorjordan-recipe-page.netlify.app/)
 
 ### Built with
 
