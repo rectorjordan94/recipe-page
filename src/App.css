@@ -89,3 +89,30 @@ hr {
   border: 1px solid hsl(30, 18%, 87%);
   width: 100%;
 }
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 1em;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.cell {
+  text-align: start;
+  width: 100%;
+  padding-left: 1em;
+}
+
+.measurement {
+  font-weight: 700;
+  color:hsl(14, 45%, 36%);
+}
+
+.nutrition-description {
+  margin-top: 1em;
+  margin-bottom: .5em;
+}

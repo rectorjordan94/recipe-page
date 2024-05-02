@@ -39,25 +39,25 @@ const RecipePage = (props) => {
             <hr />
             <div className="inner-container">
                 <h2>Nutrition</h2>
-                <p>The table below shows nutritional values per serving without the additional fillings</p>
-                <table>
-                    <tr>
-                        <td>Calories</td>
-                        <td>{props.nutrition.calories}kcal</td>
-                    </tr>
-                    <tr>
-                        <td>Carbs</td>
-                        <td>{props.nutrition.carbs}g</td>
-                    </tr>
-                    <tr>
-                        <td>Protein</td>
-                        <td>{props.nutrition.protein}g</td>
-                    </tr>
-                    <tr>
-                        <td>Fat</td>
-                        <td>{props.nutrition.fat}g</td>
-                    </tr>
-                </table>
+                <p className="nutrition-description">The table below shows nutritional values per serving without the additional fillings</p>
+                <div className="table">
+                    <div className="row">
+                        <div className="cell">Calories</div>
+                        <div className="cell measurement">{props.nutrition.calories}kcal</div>
+                    </div>
+                    <div className="row">
+                        <div className="cell">Carbs</div>
+                        <div className="cell measurement">{props.nutrition.carbs}g</div>
+                    </div>
+                    <div className="row">
+                        <div className="cell">Protein</div>
+                        <div className="cell measurement">{props.nutrition.protein}g</div>
+                    </div>
+                    <div className="row">
+                        <div className="cell">Fat</div>
+                        <div className="cell measurement">{props.nutrition.fat}g</div>
+                    </div>
+                </div>
             </div>
         </div>
     )
