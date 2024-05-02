@@ -7,36 +7,37 @@ const RecipePage = (props) => {
     })
 
     const instructions = props.instructions.map((step, i) => {
-        return <li key={i}>{step}</li>
+        return <li key={i}><strong>{step.step}</strong>: {step.detailed}</li>
     })
 
     return (
-        <div className="container">
+        <div className="outer-container">
             <img src="/image-omelette.jpeg" alt="" />
             <h1>{props.name}</h1>
             <p>{props.description}</p>
-            <div>
+            <div className="inner-container prep-time">
+                <h3>Preparation time</h3>
                 <ul>
-                    <li>Total: {props.prepTime.total}</li>
-                    <li>Preparation: {props.prepTime.preparation}</li>
-                    <li>Cooking: {props.prepTime.cooking}</li>
+                    <li><strong>Total</strong>: {props.prepTime.total}</li>
+                    <li><strong>Preparation</strong>: {props.prepTime.preparation}</li>
+                    <li><strong>Cooking</strong>: {props.prepTime.cooking}</li>
                 </ul>
             </div>
-            <div>
+            <div className="inner-container">
                 <h2>Ingredients</h2>
                 <ul>
                     {ingredients}
                 </ul>
             </div>
-            <br />
-            <div>
+            <hr />
+            <div className="inner-container">
                 <h2>Instructions</h2>
                 <ol>
                     {instructions}
                 </ol>
             </div>
-            <br />
-            <div>
+            <hr />
+            <div className="inner-container">
                 <h2>Nutrition</h2>
                 <p>The table below shows nutritional values per serving without the additional fillings</p>
                 <table>
