@@ -116,3 +116,36 @@ hr {
   margin-top: 1em;
   margin-bottom: .5em;
 }
+
+@media (max-width: 450px) {
+  .outer-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0em 0em 0em 0em;
+    border-radius: 0;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  h1 {
+    margin: 1em;
+    margin-bottom: .5em;
+  }
+
+  p {
+    margin: 1em;
+    margin-top: 0;
+  }
+
+  .inner-container {
+    /* padding: 0em 1em 0em 1em; */
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  hr {
+    margin: 0em 1em;
+  }
+}
